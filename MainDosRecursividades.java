@@ -4,6 +4,7 @@
  */
 package maindosrecursividades;
 import java.util.Scanner;
+
 /**
  *
  * @author Arturo González
@@ -12,9 +13,10 @@ public class MainDosRecursividades {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("11) Caso 1");
+            System.out.println("1) Caso 1");
             System.out.println("2) Caso 2");
             System.out.println("3) Reto 1: Suma de digitos");
+            System.out.println("4) Reto 2: Inversion de una cadena");
             System.out.println("0) Salir");
             System.out.print("Opcion: ");
             String op = sc.nextLine();
@@ -24,6 +26,8 @@ public class MainDosRecursividades {
                 Codigo_07_02.run(sc);
             } else if (op.equals("3")) {
                 Reto1.run(sc);
+            } else if (op.equals("4")) {
+                Reto2.run(sc);
             } else if (op.equals("0")) {
                 break;
             } else {
