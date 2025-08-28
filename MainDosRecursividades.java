@@ -17,17 +17,20 @@ public class MainDosRecursividades {
             System.out.println("2) Caso 2");
             System.out.println("3) Reto 1: Suma de digitos");
             System.out.println("4) Reto 2: Inversion de una cadena");
+            System.out.println("5) Reto 3: Conteo de vocales en una cadena");
             System.out.println("0) Salir");
             System.out.print("Opcion: ");
             String op = sc.nextLine();
             if (op.equals("1")) {
-                Codigo_07_01.run(sc);
+                FactorialRecursivo.run(sc);
             } else if (op.equals("2")) {
-                Codigo_07_02.run(sc);
+                FibonacciRecursivo.run(sc);
             } else if (op.equals("3")) {
-                Reto1.run(sc);
+                SumadorDeDigitos.run(sc);
             } else if (op.equals("4")) {
-                Reto2.run(sc);
+                InversorCadena.run(sc);
+            } else if (op.equals("5")) {
+                ContadorVocales.run(sc);
             } else if (op.equals("0")) {
                 break;
             } else {
